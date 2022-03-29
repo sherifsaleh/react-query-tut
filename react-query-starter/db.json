@@ -1,0 +1,53 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Joey Tribbiani"
+    },
+    {
+      "id": 3,
+      "name": "Rachel Green"
+    }
+  ],
+  "users": [
+    {
+      "id": "joe@example.com",
+      "channelId": "youtube"
+    },
+    {
+      "id": "sherif@example.com",
+      "channelId": "vimeo"
+    }
+  ],
+  "channels": [
+    {
+      "id": "youtube",
+      "courses": ["react", "vue", "angular"]
+    },
+    {
+      "id": "vimeo",
+      "courses": ["Figma", "Sketch", "xd"]
+    }
+  ]
+}
