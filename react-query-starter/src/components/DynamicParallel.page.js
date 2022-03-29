@@ -22,8 +22,8 @@ export const DynamicParallelPage = ({ heroIds }) => {
     <>
       <h1>ParallelQueries.page</h1>
 
-      {queryResluts.map((hero) => {
-        return <div key={hero?.data?.data?.id}>{hero?.data?.data?.name}</div>
+      {queryResluts.map((hero, index) => {
+        return <div key={index}>{hero?.data?.data?.name}</div>
       })}
     </>
   )

@@ -5,6 +5,7 @@ import "./App.css"
 import { DependentQueriesPage } from "./components/DependentQueries.page"
 import { DynamicParallelPage } from "./components/DynamicParallel.page"
 import { HomePage } from "./components/Home.page"
+import { PaginatedQueriesPage } from "./components/PaginatedQueries.page"
 import { ParallelQueriesPage } from "./components/ParallelQueries.page"
 import { RQSuperHeroPage } from "./components/RQSuperHero.page"
 import { RQSuperHeroesPage } from "./components/RQSuperHeroes.page"
@@ -45,9 +46,15 @@ function App() {
               <li>
                 <Link to="/rq-dependent-queries">Dependent queries</Link>
               </li>
+              <li>
+                <Link to="/rq-pagination">Pagination</Link>
+              </li>
             </ul>
           </nav>
           <Switch>
+            <Route path="/rq-pagination">
+              <PaginatedQueriesPage />
+            </Route>
             <Route path="/rq-dependent-queries">
               <DependentQueriesPage email="sherif@example.com" />
             </Route>

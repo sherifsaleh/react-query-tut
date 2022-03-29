@@ -49,5 +49,47 @@
       "id": "vimeo",
       "courses": ["Figma", "Sketch", "xd"]
     }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "white"
+    },
+    {
+      "id": 2,
+      "label": "black"
+    },
+    {
+      "id": 3,
+      "label": "red"
+    },
+    {
+      "id": 4,
+      "label": "green"
+    },
+    {
+      "id": 5,
+      "label": "blue"
+    },
+    {
+      "id": 6,
+      "label": "yellow"
+    },
+    {
+      "id": 7,
+      "label": "orange"
+    },
+    {
+      "id": 8,
+      "label": "brown"
+    },
+    {
+      "id": 9,
+      "label": "purple"
+    },
+    {
+      "id": 10,
+      "label": "gray"
+    }
   ]
 }

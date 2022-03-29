@@ -1,5 +1,5 @@
 body {
-  padding: 0 40px;
+  padding: 0 40px 40px;
 }
 nav ul {
   display: flex;
@@ -11,4 +11,5 @@ nav ul {
 nav ul li {
   list-style-type: none;
   margin-right: 16px;
+  font-size: 14px;
 }
