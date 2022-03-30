@@ -5,8 +5,10 @@ import "./App.css"
 import { DependentQueriesPage } from "./components/DependentQueries.page"
 import { DynamicParallelPage } from "./components/DynamicParallel.page"
 import { HomePage } from "./components/Home.page"
+import { InfiniteQueriesPage } from "./components/InfiniteQueries.page"
 import { PaginatedQueriesPage } from "./components/PaginatedQueries.page"
 import { ParallelQueriesPage } from "./components/ParallelQueries.page"
+import { RQMutatePage } from "./components/RQMutate.page"
 import { RQSuperHeroPage } from "./components/RQSuperHero.page"
 import { RQSuperHeroesPage } from "./components/RQSuperHeroes.page"
 import { RQSuperHeroesPageOnClick } from "./components/RQSuperHeroesOnClick.page"
@@ -49,9 +51,22 @@ function App() {
               <li>
                 <Link to="/rq-pagination">Pagination</Link>
               </li>
+              <li>
+                <Link to="/rq-infinite">Infinite</Link>
+              </li>
+              <li>
+                <Link to="/rq-mutate">Mutate</Link>
+              </li>
             </ul>
           </nav>
           <Switch>
+            <Route path="/rq-infinite">
+              <InfiniteQueriesPage />
+            </Route>
+
+            <Route path="/rq-mutate">
+              <RQMutatePage />
+            </Route>
             <Route path="/rq-pagination">
               <PaginatedQueriesPage />
             </Route>

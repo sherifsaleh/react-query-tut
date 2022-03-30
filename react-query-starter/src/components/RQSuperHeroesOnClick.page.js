@@ -1,4 +1,4 @@
-import { useSuperHerosData } from "../hooks/useSuperHeroesData"
+import { useSuperHeroesData } from "../hooks/useSuperHeroesData"
 
 export const RQSuperHeroesPageOnClick = () => {
   const onSuccess = (data) => {
@@ -10,7 +10,7 @@ export const RQSuperHeroesPageOnClick = () => {
   }
 
   const { isLoading, data, isError, error, isFetching, refetch } =
-    useSuperHerosData({ onSuccess, onError, enabled: false })
+    useSuperHeroesData({ onSuccess, onError, enabled: false })
 
   // to be added to the hook
   //  enabled: false

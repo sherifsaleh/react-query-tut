@@ -14,6 +14,16 @@
       "id": 3,
       "name": "Wonder Woman",
       "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
+      "id": 4
+    },
+    {
+      "name": "Sherif",
+      "alterEgo": "QR",
+      "id": 5
     }
   ],
   "friends": [
@@ -43,11 +53,19 @@
   "channels": [
     {
       "id": "youtube",
-      "courses": ["react", "vue", "angular"]
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
     },
     {
       "id": "vimeo",
-      "courses": ["Figma", "Sketch", "xd"]
+      "courses": [
+        "Figma",
+        "Sketch",
+        "xd"
+      ]
     }
   ],
   "colors": [
