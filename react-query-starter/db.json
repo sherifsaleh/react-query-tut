@@ -24,6 +24,41 @@
       "name": "Sherif",
       "alterEgo": "QR",
       "id": 5
+    },
+    {
+      "name": "Shazam",
+      "alterEgo": "Billy Bason",
+      "id": 6
+    },
+    {
+      "name": "Green Arrow",
+      "alterEgo": "Oliver Queen",
+      "id": 7
+    },
+    {
+      "name": "Catwoman",
+      "alterEgo": "Selina Kyle",
+      "id": 8
+    },
+    {
+      "name": "Dreamer",
+      "alterEgo": "Jack",
+      "id": 9
+    },
+    {
+      "name": "Checker",
+      "alterEgo": "Success",
+      "id": 10
+    },
+    {
+      "name": "checkerError",
+      "alterEgo": "erro",
+      "id": 11
+    },
+    {
+      "name": "Checker is ",
+      "alterEgo": "added erro",
+      "id": 12
     }
   ],
   "friends": [

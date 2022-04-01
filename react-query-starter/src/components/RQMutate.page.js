@@ -21,17 +21,21 @@ export const RQMutatePage = () => {
     useSuperHeroesData({
       onSuccess,
       onError,
-      enabled: false,
+      enabled: true,
     })
 
-  const { mutate: addHero } = useAddSuperHeroData()
+  const {
+    mutate: addHero,
+    isError: isErrorAddHero,
+    error: errorAddHero,
+  } = useAddSuperHeroData()
 
   const handleAddHeroCLick = () => {
     const hero = { name, alterEgo }
     addHero(hero)
   }
 
-  if (isLoading || isFetching) {
+  if (isLoading) {
     return <h2>Loading ...</h2>
   }
 
@@ -50,30 +54,34 @@ export const RQMutatePage = () => {
         )
       })}
 
+      {isFetching && <span>Fetching data</span>}
+
       <button onClick={refetch}>Fetch Heroes</button>
 
       <h2>Add super hero</h2>
-      <from>
-        <input
-          type="text"
-          value={name}
-          placeholder="name"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
-        <br />
-        <input
-          type="text"
-          value={alterEgo}
-          placeholder="Alter ego"
-          onChange={(e) => setAlterEgo(e.target.value)}
-        />
 
-        <br />
-        <br />
+      {isErrorAddHero && <span>{errorAddHero.message}</span>}
 
-        <button onClick={handleAddHeroCLick}>Add hero</button>
-      </from>
+      <br />
+      <input
+        type="text"
+        value={name}
+        placeholder="name"
+        onChange={(e) => setName(e.target.value)}
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        value={alterEgo}
+        placeholder="Alter ego"
+        onChange={(e) => setAlterEgo(e.target.value)}
+      />
+
+      <br />
+      <br />
+
+      <button onClick={handleAddHeroCLick}>Add hero</button>
     </>
   )
 }
